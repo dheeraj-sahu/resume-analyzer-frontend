@@ -64,7 +64,7 @@ const ResumeUpload = () => {
   try {
     setIsUploading(true);
 
-    const response = await fetch("http://localhost:5000/api/upload", {
+    const response = await fetch("https://resume-analyzer-backend-1-6dnw.onrender.com", {
       method: "POST",
       body: formData,
     });
